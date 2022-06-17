@@ -690,13 +690,18 @@
 .boder {
     margin-top: 36px;
     width: 100%;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid #7a7a7a;
 }
 
 
 .footer-item {
    margin-top: 62px;
  
+}
+.footer-item__content-wrap:hover .footer-item__decs,
+.footer-item__content-wrap:hover .footer-item__icon{
+    color: var(--while-color);
+    cursor: pointer;
 }
 
 .footer-item-01 {
