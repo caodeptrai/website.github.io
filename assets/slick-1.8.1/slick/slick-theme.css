@@ -178,11 +178,11 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 14px;
     line-height: 20px;
 
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
 
     width: 20px;
@@ -199,6 +199,7 @@
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    opacity: .9;
+    color: var(--primary-color);
+    font-size: 16px;
 }
