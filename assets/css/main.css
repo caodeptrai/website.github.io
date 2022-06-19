@@ -90,11 +90,208 @@
     cursor: pointer;
 }
 
+.header-navbar__shopping-cart {
+    position: relative;
+}
+
 
 .header-navbar__cart-icon--cart {
-    
+    padding-bottom: 10px;
     margin-left: 28px;
 }
+
+/* Cart */
+
+
+.cart-container {
+    position: absolute;
+    top: calc(100% + 8px);
+    display: none;
+    right: 0;
+    width: 320px;
+    background-color:var(--while-color);
+    height: 400px;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 1px #ccc;
+    animation: fadeIn ease-in 0.25s; 
+   
+}
+
+.cart-container::after {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    right: 6px;
+    top: -28px;
+    border-width: 16px 20px;
+    border-style: solid;
+   
+    border-color: transparent transparent var(--while-color) transparent;
+}
+
+.header-navbar__shopping-cart:hover .cart-container{
+    display: block;
+}
+
+
+.cart-heading {
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: var(--text-color);
+    padding-left: 10px;
+}
+
+.cart-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    overflow-y: auto;
+    
+}
+
+.cart-product__item {
+    display: flex;
+    /* align-items: center; */
+    padding: 10px;
+    border-top: 1px solid var(--border-color);
+   
+}
+
+.cart-product__item:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.cart-product__item-container {
+    width: 100%;
+    display: flex;
+    
+}
+
+
+.cart-product__item-container-01 {
+    margin:0 10px;
+}
+
+
+
+.cart-product__item-container-02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cart-product__name {
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-family: "Montserrat";
+    font-weight: bold;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    text-align: left;
+    
+    
+}
+
+.cart-product__name:hover {
+    color: var(--primary-color);
+}
+
+.cart-product__img-wrap {
+    min-width: 60px;
+    height: 60px;
+}
+
+.cart-product__img {
+   width: 100%;
+   height: 100%;
+   
+}
+
+.cart-product__quantity-input {
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-product__btn-input {
+    width: 48px;
+    height: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    outline: none;
+   
+}
+
+.cart-product__cost {
+    font-size: 1.4rem;
+    margin-left: 20px;
+    font-family: "Montserrat";
+}
+
+.cart-product__btn-minus {
+    height: 100%;
+    width: 28px;
+    background-color: var(--while-color);
+    border-top: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-right: none;
+    background-color: var(--while-color);
+}
+
+
+.cart-product__btn-plus {
+    height: 100%;
+    width: 28px;
+    background-color: var(--while-color);
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: none;
+} 
+
+.cart-product__btn-minus:hover,
+.cart-product__btn-plus:hover {
+    background-color: var(--primary-color);
+    color: var(--while-color);
+    cursor: pointer;
+}
+
+.cart-product__btn-delete {
+    height: 28px;
+    width: 28px;
+    border: none;
+    background-color: var(--while-color);
+    border-radius: 4px;
+}
+
+.cart-product__btn-delete:hover {
+    background-color: var(--primary-color);
+    color: var(--while-color);
+    cursor: pointer;
+}
+
+.cart-product__icon {
+    font-size: 1.4rem;
+}
+
+.cart-product__btn-input::placeholder {
+    
+    color: var(--text-color);
+}
+
 .header-navbar__list-wrap {
     width: 100%;
     height: 100%;
