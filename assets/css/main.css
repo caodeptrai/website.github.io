@@ -88,17 +88,13 @@
 .header-search {
     height: 36px;
     border-radius: 50px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    /* display: block; */
-    display: none;
+    display: flex;
+    
    
 }
 
 .header-search__input {
-   
-    width: 250px;
+    width: 0px;
     height: 100%;
     padding-left: 12px;
     transition: 0.50s ease;
@@ -112,6 +108,7 @@
     border: none;
     background-color: transparent;
     height: 100%;
+    color: var(--black-color);
 }
 
 /* .header-search:hover {
@@ -121,7 +118,7 @@
 } */
 
 
-
+/* 
 .header-navbar__item-search:hover .header-search{
     display: flex;
     border: 1px solid var(--border-color);
@@ -139,7 +136,7 @@
 .header-navbar__item-search:hover .header-search__input {
     width: 200px;
     
-}
+} */
 
 
 .header-navbar__cart-wrap{
@@ -593,6 +590,14 @@
     
 } */
 
+.open-more {
+    display: block;
+}
+
+
+.header-navbar__item--res {
+    display: block;
+}
  
 
 
