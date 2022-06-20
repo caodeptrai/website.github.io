@@ -22,18 +22,16 @@
 
 
     // Action star
-    const $1 = document.querySelector.bind(document)
-    let starElement = $1(".product-item__rating");
-    starElement.onclick = function(){
-            if(this.classList.contains("product-item__rating--gold")){
-                this.classList.remove("product-item__rating--gold") 
-            }
-            else {
-                this.classList.add("product-item__rating--gold") 
-            }
-    }
-
-  
+    // const $1 = document.querySelector.bind(document)
+    // let starElement = $1(".product-item__rating");
+    // starElement.onclick = function(){
+    //         if(this.classList.contains("product-item__rating--gold")){
+    //             this.classList.remove("product-item__rating--gold") 
+    //         }
+    //         else {
+    //             this.classList.add("product-item__rating--gold") 
+    //         }
+    // }
 
     $(document).ready(function(){
             $('.multiple-items').slick({
@@ -41,11 +39,11 @@
                 dots:true,
                 nextArrow: false,
                 arrows:false,
-                autoplay: true,
+                // autoplay: true,
                 autoplaySpeed :1000,
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                infinite:true,
+                // infinite:true,
                 speed:1000,
                 dotClass:'slick-dots',
                 
@@ -78,3 +76,4 @@
 
            
     });
+
