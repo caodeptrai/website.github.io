@@ -590,6 +590,7 @@
     margin-top: 30px;
     position: relative;
     background-color: #eeeeee;
+   
 }
 
 .banner-02 {
@@ -602,33 +603,34 @@
     position: relative;
 }
 
-.banner-01-img__wrap {
+
+.banner-01__img-container {
     position: absolute;
-    bottom: 0;
+    top:22px;
     z-index: 1;
+    
 }
-
-.banner__img-01 {
-   
-    width: 100%;
-}
-
 
 .banner__img {
     width: 100%;
     height: 100%;
- 
 }
+
+
+
+
+
 
 
 
 .banner-01-wrap {
     position: absolute;
     top: 37%;
-    left: 36.5%;
+    right: 12.5%;
     text-transform: uppercase;
     font-family: 'Montserrat';
     color: #e1e1e1;
+    text-align: right;
 }
 
 
@@ -638,19 +640,21 @@
 }
 
 .banner-01__text-2 {
-    position: absolute;
-    top: 73%;
-    left: 32%;
+    /* position: absolute; */
+    /* top: 73%;
+    left: 32%; */
     font-size: 5rem;
     font-weight: 400;
     margin: 0;
+    margin-top: -26px;
+   
 }
 
 
 .banner-01__container {
     position: absolute;
-    bottom: 153px;
-    right: 94px;
+    bottom: 27.5%;
+    right: 12.5%;
     text-align: right;
 
 }
