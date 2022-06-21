@@ -557,14 +557,21 @@
     font-size: 1.3rem;
 }
 
+.search-btn {
+ 
+}
+
+.search-btn-icon {
+    font-size: 1.3rem;
+    text-align: left;
+   
+}
+
+
 /* .header-navbar__item-search {
     position: relative;
     
 } */
-
-.open-more {
-    display: block;
-}
 
 
 .header-navbar__item--res {
@@ -582,7 +589,7 @@
 .banner-01 {
     margin-top: 30px;
     position: relative;
-    /* background-color: #eeeeee; */
+    background-color: #eeeeee;
 }
 
 .banner-02 {
@@ -595,14 +602,16 @@
     position: relative;
 }
 
-/* .banner-01-img__wrap {
-    
+.banner-01-img__wrap {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
 
 .banner__img-01 {
    
- 
-} */
+    width: 100%;
+}
 
 
 .banner__img {
