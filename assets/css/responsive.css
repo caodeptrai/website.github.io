@@ -69,7 +69,7 @@
     .header-navbar__bars {
         display: none;
     }
-    .header-navbar__item--more {
+    .navbar__more--low {
         display: block;
     }
 
@@ -162,8 +162,21 @@
     .banner-01 {
         margin-top: 16px;
         position: relative;
+        /* height:100%; */
     }
-    
+
+    /* .banner-01-img__wrap {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+       
+    }
+
+    .banner__img-01 {
+        width: 48.9%;
+        height: 100%;
+    }
+     */
 
     .banner-02 {
         margin-top: 16px;
@@ -175,6 +188,17 @@
         margin-top: 16px;
         position: relative;
        
+    }
+    .banner__img-01 {
+
+    }
+
+    .banner-01__text-1 {
+        font-size: 3rem;
+    }
+    
+    .banner-01__text-2 {
+        font-size: 3rem;
     }
 
     /* --------------Product--------- */

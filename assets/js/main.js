@@ -40,11 +40,11 @@
                 dots:true,
                 nextArrow: false,
                 arrows:false,
-                // autoplay: true,
+                autoplay: true,
                 autoplaySpeed :1000,
                 slidesToShow: 3,
-                slidesToScroll: 1,
-                // infinite:true,
+                slidesToScroll: 2,
+                infinite:true,
                 speed:1000,
                 dotClass:'slick-dots',
                 
@@ -113,6 +113,7 @@
 
     $(document).ready(
       function() {
+        
         $(".js-search-btn").click(function(){
           $(this).css({
             "background-color": "var(--black-color)",
@@ -159,6 +160,7 @@
             
         })
         });
+       
       }
 
      
