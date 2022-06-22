@@ -85,6 +85,17 @@ html {
 }
 
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 4;
+    animation: fadeIn linear 0.3s;
+}
 
 
 /* ------Modal MENU---------- */
@@ -97,15 +108,8 @@ html {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
-    z-index: 2;
-}
-
-.modal__overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    
+    z-index: 1;
+    animation: fadeIn linear 0.3s;
 }
 
 
@@ -113,19 +117,23 @@ html {
     position: fixed;
     top: 0;
     right: 0;
-    right: 0;
     bottom: 0;
     width: 36%;
     max-width: 100%;
     background-color: var(--while-color);
-    overflow: hidden;
-    transform: translateX(0%);
-    transition: transform linear 0.1s;
-    transition: all 0.3s ease;
+    /* overflow: hidden; */
+     transform: translateX(100%);
+    transition: transform linear 0.2s;
+    z-index: 2;
+   
 }
 
 .modal.open-menu {
     display: flex;
+}
+
+.show-menu {
+    transform: translateX(0%);
 }
 
 /* .header-navbar__bars:hover.nav-menu{

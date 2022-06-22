@@ -106,9 +106,10 @@
 
 .search-btn {
     border: none;
-    background-color: transparent;
+    background-color: white;
     height: 100%;
     color: var(--black-color);
+    
 }
 
 
@@ -575,6 +576,10 @@
 
 .navbar__item--hide {
     display: none !important;
+}
+
+.navbar__item--show {
+    display: block !important;
 }
 
 
