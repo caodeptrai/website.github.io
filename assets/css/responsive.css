@@ -411,13 +411,13 @@
     .banner-02 {
         margin-top: 8px;
         position: relative;
-        
+        height: 256px;
     }
     
     .banner-03 {
         margin-top: 8px;
         position: relative;
-       
+        height: 256px;
     }
 
     .banner-01__container {
