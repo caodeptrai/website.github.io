@@ -119,8 +119,9 @@ html {
     max-width: 100%;
     background-color: var(--while-color);
     overflow: hidden;
-    /* transform: translateX(0%);
-    transition: transform linear 0.1s; */
+    transform: translateX(0%);
+    transition: transform linear 0.1s;
+    transition: all 0.3s ease;
 }
 
 .modal.open-menu {

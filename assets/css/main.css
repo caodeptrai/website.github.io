@@ -24,7 +24,7 @@
     font-size: 1.4rem;
     line-height: 1.2;
     font-weight: 400;
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;
 }
 
 .header-welcome__icon,
@@ -47,7 +47,7 @@
     color: rgb(82, 82, 82);
     
     font-size: 1.4rem;
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;
 }
 
 
@@ -89,7 +89,7 @@
     height: 36px;
     border-radius: 50px;
     display: flex;
-    
+    margin-left: -19px;
    
 }
 
@@ -135,6 +135,9 @@
     padding-bottom: 10px;
     margin-left: 28px;
 }
+
+
+
 
 /* Cart */
 
@@ -552,14 +555,45 @@
     
 }
 
+/* ----------Search header--------- */
+
+.js-search__btn--click {
+    background-color: var(--black-color);
+    width: 48px;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    color: var(--while-color);
+}
+
+.js-search__btn--unclick {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    color: var(--black-color);
+}
+
+
+.navbar__item--hide {
+    display: none !important;
+}
+
+
+.js-header-search {
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+}
+
+.js-header-search__input {
+    width: 200px;
+}
+
 
 .search-icon {
     font-size: 1.3rem;
 }
 
-.search-btn {
- 
-}
+
+
 
 .search-btn-icon {
     font-size: 1.3rem;
@@ -618,7 +652,13 @@
 
 
 
-
+.banner-1 {
+    position: absolute;
+    bottom: 0;
+    height: 93.5%;
+    scale: 100%;
+    z-index: 1;
+}
 
 
 
@@ -930,6 +970,7 @@
     height: 100%;
     border: 2px solid var(--while-color);
     font-family: "Montserrat";
+   letter-spacing: 0.5px;
 }
 
 .slider-item__title {
@@ -952,7 +993,7 @@
 
 .slider-item__description {
     font-size: 1.4rem;
-    font-family: "OpenSans";
+    font-family: "OpenSans",sans-serif;
     color: rgb(66, 66, 66);
     line-height: 1.571;
     padding: 0 20px;
@@ -1123,7 +1164,7 @@
     line-height: 30px;
     letter-spacing: 0.5px;
     display: block;
-    
+    text-decoration: none;
    
 }
 
