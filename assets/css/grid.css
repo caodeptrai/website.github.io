@@ -431,9 +431,12 @@
 
 /* Mobile resolution */
 @media  (max-width: 739px) {
+    
+
     .wide {
         /* width: 540px; */
         max-width: 100%;
+        
     }
 
     .wide .row {
@@ -616,4 +619,33 @@
     .wide .l-o-11 {
         margin-left: 91.66667%;
     }
+}
+
+@media  (max-width: 424px) {
+    .grid {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .g-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    
+}
+
+@media  (max-width: 320px) {
+    .grid {
+        width: 100%;
+        padding: 0 4px;
+    }
+
+    .p-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+
+    
 }

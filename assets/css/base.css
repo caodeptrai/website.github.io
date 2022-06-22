@@ -97,6 +97,7 @@ html {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
+    z-index: 2;
 }
 
 .modal__overlay {
@@ -104,6 +105,7 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    
 }
 
 
