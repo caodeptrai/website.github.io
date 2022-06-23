@@ -347,7 +347,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -74px;
+    margin-left: -84px;
 }
 
 .header-navbar__list {
@@ -670,7 +670,7 @@
 .banner-1 {
     position: absolute;
     bottom: 0;
-    height: 93.5%;
+    height: 95.5%;
     scale: 100%;
     z-index: 1;
 }
@@ -719,9 +719,8 @@
     font-size: 30px;
     font-weight: bold;
     margin: 0;
-   
     padding-bottom: 14px;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.6px;
 }
 
 .banner__btn:hover {
@@ -730,7 +729,7 @@
 
 .banner-02__container {
     position: absolute;
-    bottom: 76px;
+    bottom: 71px;
     left: 71px;
     text-align: left;
 }
@@ -842,13 +841,14 @@
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black-color);
-    margin:8px 0 12px 0;
+    margin:12px 0 12px 0;
     overflow: hidden;
     display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     text-overflow: ellipsis;
+    letter-spacing: -0.4px;
 }
 
 .product-item__name:hover {
@@ -906,7 +906,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 714px;
+    height: 706px;
     
 }
 
@@ -915,7 +915,7 @@
 .slider__title-container {
    
    width: 100%;
-   margin-bottom: 50px;
+   margin-bottom: 54px;
 }
 
 .slider__title-01 {
@@ -926,13 +926,13 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 84px 0 0 0;
-    letter-spacing: 5px;
+    margin: 82px 0 0 0;
+    letter-spacing: 6px;
 }
 
 
 .slider__title-02 {
-    margin: 16px 0 20px 0;
+    margin: 10px 0 20px 0;
     font-size: 2.4rem;
     font-family: "Montserrat";
     color: var(--black-color);
@@ -1130,7 +1130,7 @@
 }
 
 .footer-item__content-item {
-    line-height: 28px;
+    line-height: 30px;
    
 }
 
@@ -1139,7 +1139,7 @@
     font-size: 1.4rem;
     font-family: "Montserrat";
     color: #7a7a7a;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
     
 }
 
