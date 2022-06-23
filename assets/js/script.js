@@ -75,6 +75,7 @@ $(document).ready(function($){
     /**
      -----------------Slider--------------------------
      */
+    
     $('.multiple-items').slick({
         nav: false,
         dots:true,
