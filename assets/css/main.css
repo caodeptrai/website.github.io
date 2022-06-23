@@ -67,7 +67,7 @@
 
 .header-navbar__logo-wrap {
     border: 2px solid var(--black-color);
-    width: 196px;
+    width: 200px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -104,11 +104,17 @@
    
 }
 
+.header-search__input::placeholder {
+    font-size: 1.4rem;
+    color: #ccc;
+}
+
 .search-btn {
     border: none;
     background-color: white;
     height: 100%;
     color: var(--black-color);
+    cursor: pointer;
     
 }
 
@@ -119,11 +125,14 @@
     height: 100%;
 }
 
+
+
 .header-navbar__cart-icon {
 
     font-size: 3rem;
     margin-left: 28px;
     cursor: pointer;
+    color: var(--black-color);
 }
 
 .header-navbar__shopping-cart {
@@ -338,6 +347,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -74px;
 }
 
 .header-navbar__list {
@@ -782,12 +792,13 @@
 }
 
 .product-header__featured-item {
-    margin: 12px 0 24px 0;
+    margin: 12px 0 20px 0;
     font-size: 2.4rem;
     font-family: "Montserrat";
     color: var(--black-color);
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2.2px;
+    line-height: 1.2;
 }
 
 .product-header__border {
@@ -915,13 +926,13 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 80px 0 0 0;
-    letter-spacing: 2px;
+    margin: 84px 0 0 0;
+    letter-spacing: 5px;
 }
 
 
 .slider__title-02 {
-    margin: 16px 0 28px 0;
+    margin: 16px 0 20px 0;
     font-size: 2.4rem;
     font-family: "Montserrat";
     color: var(--black-color);
@@ -943,6 +954,7 @@
 .slider-item {
     background-color: var(--while-color);
     position: relative;
+    height: 392px;
     
 }
 
@@ -1003,7 +1015,7 @@
     line-height: 1.571;
     padding: 0 20px;
     font-weight: 400;
-    margin: 0 0 22px 0;
+    margin: 0 0 17px 0;
     overflow: hidden;
     display: block;
     display: -webkit-box;
@@ -1015,12 +1027,12 @@
 
 .slider-item__action {
     display: flex;
-    padding: 22px 0;
+    padding: 20px 0;
     border-top: 1px solid var(--border-color);
 }
 
 .slider-item__action-commnent {
-    padding:0 20px;
+    padding:0 28px 0 20px;
     text-decoration: none;
     color: #c0c0c0;
 }
@@ -1093,15 +1105,16 @@
 }
 
 .footer-item__content {
-    padding-top: 26px;
+    padding-top: 20px;
 }
 
 
 .footer-item__content-02 {
     display: flex;
     justify-content: space-between;
-    padding-top: 26px;
+    padding-top: 14px;
     letter-spacing: 0.5px;
+    padding-right: 26px;
 }
 
 
@@ -1117,7 +1130,7 @@
 }
 
 .footer-item__content-item {
-    line-height: 30px;
+    line-height: 28px;
    
 }
 

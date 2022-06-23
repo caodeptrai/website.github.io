@@ -12,7 +12,7 @@ $(document).ready(function($){
           $(".header-search__input").addClass("js-header-search__input");
           $(".tes").addClass("overlay");
           if(width < 1300) {
-            $(".header-navbar__item--more").addClass("navbar__item--hide");
+            $(".header-navbar__list").addClass("navbar__item--hide");
 
           }else {
             
@@ -23,22 +23,27 @@ $(document).ready(function($){
           
         });
 
-      $(".tes").click(function(){
-        $(".search-btn").removeClass("js-search__btn--click");
-        $(".header-search").removeClass("js-header-search");
-        $(".header-search__input").removeClass("js-header-search__input");
-        if(width < 1300) {
-          $(".header-navbar__item--more").removeClass("navbar__item--hide");
-
-        }else {
-          $(".header-navbar__item--more").removeClass("navbar__item--show");
-          $(".header-navbar__item--res").removeClass("navbar__item--hide");
-        }
         
+       
+      $(document).click(function(e){
+        var container = $('.header-search');
+        if(!container.is(e.target)&&container.has(e.target).length===0){
+          $(".search-btn").removeClass("js-search__btn--click");
+          $(".header-search").removeClass("js-header-search");
+          $(".header-search__input").removeClass("js-header-search__input");
+
+          if(width < 1300) {
+            $(".header-navbar__list").removeClass("navbar__item--hide");
+            $(".header-navbar__item--more").removeClass("navbar__item--hide");
+  
+          }else {
+            $(".header-navbar__item--more").removeClass("navbar__item--show");
+            $(".header-navbar__item--res").removeClass("navbar__item--hide");
+          }
+        }
       });
 
-
-
+     
         
 
     });
@@ -60,9 +65,12 @@ $(document).ready(function($){
         event.stopPropagation();
     });
 
+/* ---------------------Star---------------*/
+    $(".product-item__rating-icon").click(function(){
+      $(this).toggleClass("product-item__rating--gold")
+  });
 
-
-
+    
 
     /**
      -----------------Slider--------------------------
@@ -73,7 +81,7 @@ $(document).ready(function($){
         nextArrow: false,
         arrows:false,
         infinite:true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed :1000,
         slidesToShow: 3,
         slidesToScroll: 2,
@@ -104,25 +112,6 @@ $(document).ready(function($){
 
     });
 
-    
-    // const modal = document.querySelector('.js-modal');
-    // const menu = document.querySelector('.js-menu');
-    // const menuContainer = document.querySelector('.js-modal__body')
-    // function showMenu(){
-    //     modal.classList.add('open-menu');
-    // }
-    // function hideMenu(){
-    //     modal.classList.remove('open-menu');
-
-    // }
-    
-
-    // menu.addEventListener('click',showMenu);
-    
-    // modal.addEventListener('click',hideMenu);
-    
-    // menuContainer.addEventListener('click',function(event){
-    //     event.stopPropagation();
-    // });
+   
 
 });
