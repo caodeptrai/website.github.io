@@ -157,3 +157,11 @@ html {
     font-weight: bold;
 }
 
+.nav-menu__item-search {
+    padding-bottom: 20px;
+}
+
+.menu-search__input::placeholder {
+    font-size: 1.4rem;
+    color: #ccc;
+}
