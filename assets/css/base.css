@@ -124,9 +124,6 @@ html {
     transform: translateX(0%);
 }
 
-/* .header-navbar__bars:hover.nav-menu{
-    transform: translateX(-100%);
-} */
 
 .nav-menu__list {
     padding: 0;

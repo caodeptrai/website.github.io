@@ -438,11 +438,11 @@
     .grid {
         width: 100%;
         display: block;
-        padding: 0 8px;
+        padding: 0;
     }
     
     .wide {
-        /* width: 540px; */
+       
         max-width: 100%;
         
     }
@@ -465,8 +465,26 @@
 
 }
 
+@media (min-width:375px) and (max-width: 424px) {
+    
+    
+    .wide {
+       
+        max-width: 100%;
+        
+    }
+}
+
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 992px) and (max-width: 1023px) {
+    .wide {
+        width: 800px;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 991px) {
     .wide {
         width: 644px;
     }

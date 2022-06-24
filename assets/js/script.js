@@ -1,9 +1,10 @@
 $(document).ready(function($){
 
-    /**
+    $('body').on('click',(e)=>{
+
+      /**
      --------------------------Search---------------------
      */
-    $('body').on('click',(e)=>{
         var width = $(window).width();
 
         $(".search-btn").click(function(){
@@ -23,9 +24,6 @@ $(document).ready(function($){
           
         });
 
-        
-       
-      $(document).click(function(e){
         var container = $('.header-search');
         if(!container.is(e.target)&&container.has(e.target).length===0){
           $(".search-btn").removeClass("js-search__btn--click");
@@ -41,10 +39,7 @@ $(document).ready(function($){
             $(".header-navbar__item--res").removeClass("navbar__item--hide");
           }
         }
-      });
-
-     
-        
+            
 
     });
 
@@ -75,44 +70,58 @@ $(document).ready(function($){
     /**
      -----------------Slider--------------------------
      */
-    
-    $('.multiple-items').slick({
-        nav: false,
-        dots:true,
-        nextArrow: false,
-        arrows:false,
-        infinite:true,
-        autoplay: true,
-        autoplaySpeed :1000,
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        speed:1000,
-        dotClass:'slick-dots',
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                
-                slidesToShow: 3,
-                slidesToScroll: 1,
-              }
-            },
-            {
-              breakpoint: 740,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                slidesToScroll: 1,
-                slidesToShow: 1,
-               
-              }
-            }
-          ]
+     var slides = document.querySelectorAll('.my-slide ');
+    var btns = document.querySelectorAll('.navigation-dot__btn');
+    let currentSlide = 1;
 
+    // Slider click dots
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
     });
 
+    // Slider autoplay
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 3000);
+      }
+      repeater();
+    }
+    repeat();
    
 
 });
