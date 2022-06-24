@@ -272,6 +272,12 @@
         
     }
 
+    /* ---Slider----- */
+
+    .slider-item {
+        height: 370px;
+    }
+
     /* --------Footer----- */
 
     .footer-item-01 {

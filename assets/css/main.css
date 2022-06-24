@@ -1017,12 +1017,12 @@
     padding: 0 20px;
     font-weight: 400;
     margin: 0 0 17px 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: block;
-    display: -webkit-box;
+    /* display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
 
 }
 

@@ -143,6 +143,9 @@
 
 /* >= Tablet */
 @media (min-width: 740px) {
+
+
+
     .row {
         margin-left: -8px;
         margin-right: -8px;
@@ -432,7 +435,12 @@
 /* Mobile resolution */
 @media  (max-width: 739px) {
     
-
+    .grid {
+        width: 100%;
+        display: block;
+        padding: 0 8px;
+    }
+    
     .wide {
         /* width: 540px; */
         max-width: 100%;
@@ -624,7 +632,7 @@
 @media  (max-width: 424px) {
     .grid {
         width: 100%;
-        padding: 0px;
+        padding: 0 4px;
     }
 
     .g-12 {
