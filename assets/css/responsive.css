@@ -175,6 +175,9 @@
         border: none;
     }
 
+    .footer-item__header {
+        text-align: center;
+    }
 
 }
 
@@ -288,17 +291,30 @@
 
     /* --------Footer----- */
 
+   
+
     .footer-item-01 {
         margin-right: 0;
     }
+
+    .footer-item-02 {
+        margin-left: 0;
+        padding-right:7px;
+     }
+
     
     .footer-item-03 {
-        margin-left: 0;
+       margin-left: 0;
+       padding-left: 7px
+    }
+    
+    .footer-item__content-01 {
+        text-align: center;
     }
     
     
     .footer-item__content-02 {
-        display: block;
+        
         padding-top: 26px;
     }
 
@@ -533,6 +549,10 @@
 
     /* --------Footer----- */
 
+    .footer-item {
+        margin-top: 40px;
+    }
+
     .footer-item-01 {
         margin-right: 0;
     }
@@ -542,8 +562,7 @@
     }
     
 
-
-    
+   
     .footer-item__content-02 {
         display: flex;
         padding-top: 26px;

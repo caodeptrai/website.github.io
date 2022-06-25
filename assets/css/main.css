@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: var(--header-height);
-    background-color: var(--black-color);
+    background-color: #222222;
     /* position: fixed;
     top: 0;
     left: 0;
@@ -1097,7 +1097,7 @@
 .footer {
     width: 100%;
     
-    background-color: var(--black-color);
+    background-color: #222222;
 }
 
 .boder {
