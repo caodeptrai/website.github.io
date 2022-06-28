@@ -894,27 +894,22 @@
 }
 
 .slide-container {
-    position: relative;
+    /* position: relative;
     margin: 0 -15px;
-    height: 500px;
+    height: 500px; */
+    display: flex;
+   position: relative;
+   width: 100%;
+   overflow: hidden;
    
 }
 
 .my-slide {
-    display: flex;
-    position: absolute;
-    
-    z-index: 1;
-    clip-path: circle(0% at 0 50%);
-    overflow: hidden;
-    max-width: 100%;
+  
+    transition: transform 0.25s linear;
 }
 
-.slide-container .active {
-    clip-path: circle(150% at 0 50%);
-    transition: 2.5s;
-    transition-property: clip-path;
-}
+
 
 
 
@@ -926,18 +921,18 @@
 
 
 .navigation{
-    z-index: 2;
-    position: absolute;
+    width: 100%;
+    margin-top: 15px;
     display: flex;
-    bottom: 66px;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
+    justify-content: center;
+   
   }
 
    .navigation-dot__btn{
     background-color: #cbbfdf;
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
     margin: 10px 1px 0 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -948,9 +943,20 @@
   .navigation .active{
     background: var(--primary-color);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
   }
+
+
+
+
+.dot-res--l {
+    display: none;
+}
+
+.dot-res--s {
+    display: none;
+}
 
 
  
